@@ -1,9 +1,7 @@
-
 import * as _ from 'lodash';
-import {Person} from './Person';
+import {GitHubApiService} from './GitHubApiService'
+import { User } from './User';
+console.log('Hello');
 
-let peron=new Person("Saurabh","Dubey");
-console.log(peron.getFullName());
-
-let array=[1,2,3,4,5];
-console.log(_.reverse(array))
+let a= new GitHubApiService();
+let responseObj=a.getUserInfo("uday8403");
