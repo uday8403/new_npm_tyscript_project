@@ -7,13 +7,6 @@ export class User{
     followerCount:number;
     repos?:Repo[];
 
-    /* constructor(login:string,fullName:string,repocount:number,followers:number){
-        this.login=login;
-        this.fullName=fullName;
-        this.followerCount=followers
-        this.repoCount=repocount;
-    } */
-
     constructor(userResponse:any){
         this.login=userResponse.login;
         this.fullName=userResponse.name;

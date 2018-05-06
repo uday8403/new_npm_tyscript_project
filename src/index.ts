@@ -3,7 +3,6 @@ import {GitHubApiService} from './GitHubApiService'
 import { User } from './User';
 import { Repo } from './Repo';
 console.log('Hello');
-
 let userName= process.argv[2];
 let a= new GitHubApiService();
 a.getUserInfo(userName, function(user:User){
